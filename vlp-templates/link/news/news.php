@@ -10,7 +10,7 @@
   <div class="vlp-link-image-container">
     <div class="vlp-link-image">
     <?php
-    $size = array( 300, 999 );
+    $size = array( 1024, 999 );
     if ( VLP_Settings::get( 'template_use_custom_style' ) ) {
       $size = VLP_Settings::get( 'custom_style_image_size' );
       preg_match( '/^(\d+)x(\d+)$/i', $size, $match );
