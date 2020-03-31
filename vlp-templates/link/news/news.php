@@ -22,7 +22,7 @@
     ?>
     </div><!-- vlp-link-image -->
   </div><!-- vlp-link-image-container -->
-  <?php endif; // Image ID. ?>
+  <?php endif; // image id ?>
 
   <div class="vlp-link-text-container">
 
@@ -30,19 +30,19 @@
     <div class="vlp-link-title">
     <?php echo wp_kses_post( $link->title() ); ?>
     </div><!-- vlp-link-title -->
-    <?php endif; // Title. ?>
+    <?php endif; // title ?>
 
     <?php if ( $link->summary() ) : ?>
     <div class="vlp-link-summary">
     <?php echo wp_kses_post( $link->summary() ); ?>
     </div><!-- vlp-link-summary -->
+    <?php endif; // summary ?>
 
     <?php if ( $link->url() ) : ?>
     <div class="vlp-link-url">
     <?php echo wp_kses_post( $link->url() ); ?>
     </div><!-- vlp-link-url -->
+    <?php endif; // url ?>
 
-    <a href="<?php echo esc_attr( $link->url() ); ?>" class="vlp-link" title="<?php echo esc_html( $link->title() ); ?>"<?php echo $link_attributes; ?>></a>
-  <?php endif; // Summary. ?>
   </div>
 </div>
